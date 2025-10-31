@@ -43,10 +43,10 @@ input_data = pd.DataFrame({
 
         "fixed_acidity": [fixed_acidity], # type: ignore
         "volatile_acidity": [volatile_acidity],  # type: ignore
-        "citric_acid": [citric acid], 
+        "citric_acid": [citric_acid], 
         "residual_sugar": [residual_sugar], 
         "chlorides": [chlorides], 
-        "free_sulfur_dioxide": [free_sulphur_dioxide], 
+        "free_sulfur_dioxide": [free_sulfur_dioxide], 
         "total_sulfur_dioxide": [total_sulfur_dioxide], 
         "density": [density], 
         "pH": [pH], 
@@ -57,7 +57,7 @@ st.subheader(" Input Summary")
 st.dataframe(input_data)
 
 
-scaled_features = scaler.transform(X)
+# scaled_features = scaler.transform(X)
 
 
 prediction = np.random.uniform(0, 10)
